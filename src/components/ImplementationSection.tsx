@@ -1,7 +1,7 @@
-// Sección Implementación - 4 pasos con iconos
+// Sección Implementación - 4 pasos con imagen banner
 // CAMBIAR: Pasos, textos, tiempos estimados
-// PERSONALIZAR: agregar video demo aquí
 import { Settings, GraduationCap, ArrowRightLeft, CheckCircle2 } from "lucide-react";
+import imgImplementacion from "@/assets/img-implementacion.jpg";
 
 const steps = [
   {
@@ -39,6 +39,15 @@ const ImplementationSection = () => {
           </p>
         </div>
 
+        {/* Imagen banner del proceso */}
+        <div className="max-w-4xl mx-auto mb-10">
+          <img
+            src={imgImplementacion}
+            alt="Proceso de implementación 5 Direcciones"
+            className="w-full rounded-2xl shadow-card"
+          />
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {steps.map((step, i) => (
             <div
@@ -54,11 +63,6 @@ const ImplementationSection = () => {
             </div>
           ))}
         </div>
-
-        {/* PERSONALIZAR: agregar video demo aquí */}
-        {/* <div className="mt-12 max-w-2xl mx-auto">
-          <video controls className="w-full rounded-xl shadow-card" />
-        </div> */}
       </div>
     </section>
   );
