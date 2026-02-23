@@ -1,28 +1,29 @@
-// Sección Problema/Solución - Envía y recibe documentos electrónicos
+// Sección Problema/Solución - Cards con imágenes
 // CAMBIAR: Textos y beneficios según producto actual
-import { FileText, Download, Shield, Zap } from "lucide-react";
+import imgEnvio from "@/assets/img-envio-docs.jpg";
+import imgRecibe from "@/assets/img-recibe-facturas.jpg";
+import imgDian from "@/assets/img-automatiza-dian.jpg";
+import imgTitulos from "@/assets/img-titulos-valor.jpg";
 
 const benefits = [
   {
-    icon: FileText,
+    image: imgEnvio,
     title: "Envía Documentos Soporte Electrónicos",
-    // CAMBIAR: Descripción del beneficio
     description: "Genera y envía documentos soporte a la DIAN de forma automática. Sin errores, sin demoras.",
   },
   {
-    icon: Download,
+    image: imgRecibe,
     title: "Recibe Facturas Sin Papel",
     description: "Recibe y gestiona todas tus facturas electrónicas en un solo lugar. Adiós al papel.",
   },
   {
-    icon: Shield,
+    image: imgDian,
     title: "Automatiza Todo con la DIAN",
     description: "Conexión directa con la DIAN. Validación automática, numeración autorizada, reportes al día.",
   },
   {
-    icon: Zap,
-    title: "Títulos Valor - Prueba Gratis",
-    // CAMBIAR: Info de títulos valor
+    image: imgTitulos,
+    title: "Títulos Valor Electrónicos",
     description: "Gestiona títulos valor electrónicos. Activa la prueba gratis y descubre el poder digital.",
   },
 ];
@@ -40,18 +41,20 @@ const ProblemSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {benefits.map((b, i) => (
             <div
               key={b.title}
-              className="bg-card rounded-xl p-6 shadow-card animate-fade-in-up flex gap-4"
+              className="bg-card rounded-2xl overflow-hidden shadow-card animate-fade-in-up hover:shadow-lg transition-shadow"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent flex items-center justify-center">
-                <b.icon className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-1">{b.title}</h3>
+              <img
+                src={b.image}
+                alt={b.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="font-bold text-foreground mb-2 text-lg">{b.title}</h3>
                 <p className="text-sm text-muted-foreground">{b.description}</p>
               </div>
             </div>

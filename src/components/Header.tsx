@@ -33,12 +33,12 @@ const Header = () => {
 
         {/* CTA Header - WhatsApp */}
         <a
-          href="https://wa.me/573013936616?text=Hola%205Direcciones%2C%20quiero%20información%20sobre%20facturación%20electrónica"
+          href="https://wa.me/573013936616?text=Hola%205Direcciones%2C%20quiero%20una%20consulta%20gratis%20sobre%20facturaci%C3%B3n%20electr%C3%B3nica"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-bold hover-scale-cta"
         >
-          Prueba Gratis
+          Consulta Gratis
         </a>
       </div>
     </header>

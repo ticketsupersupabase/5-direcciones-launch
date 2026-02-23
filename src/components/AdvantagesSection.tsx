@@ -1,25 +1,23 @@
-// Sección Ventajas - Grid con iconos y testimonios placeholder
+// Sección Ventajas - Cards con imágenes + testimonios
 // CAMBIAR: Ventajas, testimonios, nombres de clientes
-import { Clock, Shield, Smartphone, BarChart3, Star } from "lucide-react";
+import { Star } from "lucide-react";
+import imgTiempo from "@/assets/img-reduce-tiempo.jpg";
+import imgDian from "@/assets/img-dian-compliant.jpg";
+import imgReportes from "@/assets/img-reportes.jpg";
 
 const advantages = [
   {
-    icon: Clock,
+    image: imgTiempo,
     title: "Reduce 80% Tiempo",
     description: "Automatiza la generación, envío y recepción de facturas electrónicas.",
   },
   {
-    icon: Shield,
+    image: imgDian,
     title: "100% DIAN Compliant",
     description: "Cumplimiento total con la normativa DIAN. Siempre actualizado.",
   },
   {
-    icon: Smartphone,
-    title: "App Móvil",
-    description: "Factura desde tu celular. Gestión completa en la palma de tu mano.",
-  },
-  {
-    icon: BarChart3,
+    image: imgReportes,
     title: "Reportes en Tiempo Real",
     description: "Dashboard con métricas, estados de facturas y alertas automáticas.",
   },
@@ -54,19 +52,23 @@ const AdvantagesSection = () => {
           </p>
         </div>
 
-        {/* Grid ventajas */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto mb-16">
+        {/* Grid ventajas con imágenes */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
           {advantages.map((adv, i) => (
             <div
               key={adv.title}
-              className="bg-card rounded-xl p-5 text-center shadow-card hover:shadow-lg transition-shadow animate-fade-in-up"
+              className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-lg transition-shadow animate-fade-in-up"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                <adv.icon className="w-6 h-6 text-primary" />
+              <img
+                src={adv.image}
+                alt={adv.title}
+                className="w-full h-44 object-cover"
+              />
+              <div className="p-5 text-center">
+                <h3 className="font-bold text-foreground text-base mb-1">{adv.title}</h3>
+                <p className="text-xs text-muted-foreground">{adv.description}</p>
               </div>
-              <h3 className="font-bold text-foreground text-sm md:text-base mb-1">{adv.title}</h3>
-              <p className="text-xs text-muted-foreground">{adv.description}</p>
             </div>
           ))}
         </div>
@@ -83,7 +85,6 @@ const AdvantagesSection = () => {
                 className="bg-muted/60 rounded-xl p-6 animate-fade-in-up"
                 style={{ animationDelay: `${i * 0.15}s` }}
               >
-                {/* Estrellas */}
                 <div className="flex gap-1 mb-3">
                   {Array.from({ length: t.rating }).map((_, j) => (
                     <Star key={j} className="w-4 h-4 fill-secondary text-secondary" />
