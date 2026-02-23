@@ -1,8 +1,8 @@
 // Sección Problema/Solución - Cards con imágenes
 // CAMBIAR: Textos y beneficios según producto actual
-import imgEnvio from "@/assets/img-envio-docs.jpg";
+import imgEnvio from "@/assets/img-envio-docs.png";
 import imgRecibe from "@/assets/img-recibe-facturas.jpg";
-import imgDian from "@/assets/img-automatiza-dian.jpg";
+import imgDian from "@/assets/img-automatiza-dian.avif";
 import imgTitulos from "@/assets/img-titulos-valor.jpg";
 
 const benefits = [
