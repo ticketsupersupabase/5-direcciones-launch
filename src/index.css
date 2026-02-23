@@ -2,95 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* ==============================================
+   SISTEMA DE DISEÑO - 5 Direcciones
+   Paleta: Verde #00A676, Naranja #FF9800, Blanco
+   CAMBIAR: Ajustar colores aquí si cambia la marca
+   ============================================== */
 
 @layer base {
   :root {
+    /* Verde corporativo 5 Direcciones */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* CAMBIAR: Color primario verde marca */
+    --primary: 158 100% 33%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secundario: naranja accent */
+    --secondary: 36 100% 49%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 160 20% 96%;
+    --muted-foreground: 210 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: verde claro */
+    --accent: 158 60% 94%;
+    --accent-foreground: 158 100% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 15% 90%;
+    --input: 210 15% 90%;
+    --ring: 158 100% 33%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Gradientes y sombras personalizados */
+    --gradient-hero: linear-gradient(135deg, hsl(158 100% 33%) 0%, hsl(158 80% 25%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(36 100% 49%) 0%, hsl(28 100% 52%) 100%);
+    --shadow-card: 0 4px 24px -4px hsl(158 100% 33% / 0.12);
+    --shadow-cta: 0 8px 32px -8px hsl(36 100% 49% / 0.4);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary: 158 100% 33%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 158 60% 94%;
+    --sidebar-accent-foreground: 158 100% 25%;
+    --sidebar-border: 210 15% 90%;
+    --sidebar-ring: 158 100% 33%;
   }
 }
 
@@ -100,6 +67,83 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Scroll suave global */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Animaciones fade-in para secciones */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Hover scale para CTAs */
+  .hover-scale-cta {
+    @apply transition-all duration-200;
+  }
+  .hover-scale-cta:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-cta);
+  }
+
+  /* Fondo gradiente hero */
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  /* Fondo gradiente CTA naranja */
+  .bg-cta-gradient {
+    background: var(--gradient-cta);
+  }
+
+  /* Sombra elegante para cards */
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Card plan destacado */
+  .plan-highlight {
+    @apply ring-2 ring-secondary scale-105;
+    box-shadow: 0 8px 40px -8px hsl(36 100% 49% / 0.3);
+  }
+
+  /* Badge urgencia pulsante */
+  .pulse-urgency {
+    animation: pulseUrgency 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseUrgency {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; transform: scale(1.02); }
+  }
+
+  /* WhatsApp sticky button */
+  .wa-sticky {
+    @apply fixed bottom-6 right-6 z-50 rounded-full shadow-lg;
+    background: hsl(142 70% 45%);
+    animation: waBounce 3s ease-in-out infinite;
+  }
+
+  @keyframes waBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
   }
 }
