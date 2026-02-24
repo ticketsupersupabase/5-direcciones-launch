@@ -26,15 +26,15 @@ const advantages = [
 // CAMBIAR: Testimonios reales de clientes
 const testimonials = [
   {
-    name: "María López",
-    company: "Distribuidora El Sol - Medellín",
-    text: "Perfecto para mi PYME. Reduje el tiempo de facturación de 3 horas a 20 minutos al día.",
+    name: "Valentina Acosta",
+    company: "MICROTONER PC V&J S.A.S.",
+    text: "Perfecto para mi negocio. Reduje el tiempo de facturación de 3 horas a 20 minutos al día.",
     rating: 5,
   },
   {
-    name: "Carlos Restrepo",
-    company: "Importaciones CR - Bogotá",
-    text: "La implementación fue increíblemente rápida. En 2 semanas ya estábamos facturando electrónicamente.",
+    name: "Fernando Hernandez",
+    company: "Propietario de Granfer Percheros y repisas",
+    text: "La implementación fue increíblemente rápida; en dos horas estábamos facturando electrónicamente.",
     rating: 5,
   },
 ];

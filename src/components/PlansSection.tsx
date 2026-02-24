@@ -6,53 +6,47 @@ import { Check } from "lucide-react";
 // CAMBIAR: Datos de planes aquí
 const plans = [
   {
-    name: "Básico",
+    name: "Con Todo",
     // CAMBIAR: precio plan básico
     price: "$189.900",
-    period: "/mes",
-    invoices: "25 facturas/mes",
+    period: "/Vigencia 2 años",
+    invoices: "Es el paquete que necesitas para empezar a gestionar tu negocio de la mejor manera.",
     features: [
-      "Documentos soporte electrónicos",
-      "Envíos básicos DIAN",
-      "Panel de control",
-      "Soporte por email",
+      "50 folios para facturación electrónica, buzón tributario y eventos de título valor",
+      "25 folios para documentos soporte",
+      "25 folios para documentos soporte de nómina electrónica",
     ],
     highlighted: false,
     // CAMBIAR: Texto prellenado WA
-    waText: "Quiero%20plan%20B%C3%A1sico%20info",
+    waText: "Quiero%20plan%20Con%20Todo%20info",
   },
   {
-    name: "Pro",
+    name: "Con Todo Pro",
     // CAMBIAR: precio plan pro
     price: "$309.900",
-    period: "/mes",
-    invoices: "100 facturas/mes",
+    period: "/Vigencia 2 años",
+    invoices: "Es el paquete ideal para empresas en crecimiento que necesitan una solución completa y escalable.",
     features: [
-      "Todo lo del Básico",
-      "Títulos valor electrónicos",
-      "Reportes avanzados",
-      "Soporte prioritario",
-      "Integraciones",
+      "200 folios para facturación electrónica, buzón tributario y eventos de título valor",
+      "150 folios para documentos soporte",
+      "50 folios para documentos soporte de nómina electrónica",
     ],
     highlighted: true,
-    waText: "Quiero%20plan%20Pro%20info",
+    waText: "Quiero%20plan%20Con%20Todo%20Pro%20info",
   },
   {
-    name: "Max",
+    name: "Con Todo Max",
     // CAMBIAR: precio plan max
     price: "$699.900",
-    period: "/mes",
-    invoices: "400 facturas/mes",
+    period: "/Vigencia 2 años",
+    invoices: "Es el paquete ideal para empresas que requieren una solución completa, escalable y con soporte prioritario.",
     features: [
-      "Todo lo del Pro",
-      "API completa",
-      "Soporte prioritario 24/7",
-      "Multi-sucursal",
-      "Personalización total",
-      "Gerente de cuenta",
+      "600 folios para facturación electrónica, buzón tributario y eventos de título valor",
+      "400 folios para documentos soporte",
+      "300 folios para documentos soporte de nómina electrónica",
     ],
     highlighted: false,
-    waText: "Quiero%20plan%20Max%20info",
+    waText: "Quiero%20plan%20Con%20Todo%20Max%20info",
   },
 ];
 
@@ -71,11 +65,11 @@ const PlansSection = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-extrabold text-foreground mb-4">
-            Elige Tu Plan y <span className="text-secondary">Empieza Hoy</span>
+            Elige el plan perfecto para <span className="text-secondary">Tu empresa</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             {/* CAMBIAR: Subtítulo planes */}
-            Paga mensual, sin contratos. Implementa en 4 semanas. Cancela cuando quieras.
+            Planes flexibles que se adaptan al tamaño y necesidades de tu negocio.
           </p>
         </div>
 
@@ -132,7 +126,15 @@ const PlansSection = () => {
                 Seleccionar {plan.name}
               </a>
             </div>
+
+
           ))}
+        </div>
+
+        <div className="text-center mt-8">
+          <p className="text-sm text-muted-foreground">
+            Aplica términos y condiciones para clientes nuevos
+          </p>
         </div>
       </div>
     </section>

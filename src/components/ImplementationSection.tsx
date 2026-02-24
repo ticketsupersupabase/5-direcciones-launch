@@ -1,7 +1,7 @@
 // Sección Implementación - 4 pasos con imagen banner
 // CAMBIAR: Pasos, textos, tiempos estimados
 import { Settings, GraduationCap, ArrowRightLeft, CheckCircle2 } from "lucide-react";
-import imgImplementacion from "@/assets/img-implementacion-2.jpg";
+import imgImplementacion from "@/assets/img-implementacion-2.png";
 
 const steps = [
   {
@@ -32,7 +32,7 @@ const ImplementationSection = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-extrabold text-foreground mb-4">
-            Implementa en <span className="text-primary">4 Semanas</span>
+            Implementa en <span className="text-primary">4 Horas</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Proceso simple, acompañamiento total. No necesitas ser experto en tecnología.

@@ -13,18 +13,18 @@ const benefits = [
   },
   {
     image: imgRecibe,
-    title: "Recibe Facturas Sin Papel",
-    description: "Recibe y gestiona todas tus facturas electrónicas en un solo lugar. Adiós al papel.",
+    title: "Emite facturas electrónicas",
+    description: "Con nuestra plataforma emite facturas electrónicas, notas débito y notas crédito.",
   },
   {
     image: imgDian,
-    title: "Automatiza Todo con la DIAN",
-    description: "Conexión directa con la DIAN. Validación automática, numeración autorizada, reportes al día.",
+    title: "Nómina electrónica",
+    description: "Desde un solo empleado la nómina es electrónica.",
   },
   {
     image: imgTitulos,
-    title: "Títulos Valor Electrónicos",
-    description: "Gestiona títulos valor electrónicos. Activa la prueba gratis y descubre el poder digital.",
+    title: "Eventos título valor ",
+    description: "Gestiona los acuses de facturas a crédito en minutos.",
   },
 ];
 

@@ -16,10 +16,12 @@ const TitulosValorSection = () => {
               />
               <div className="p-8 md:p-10 flex flex-col justify-center text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-4">
-                  Títulos Valor Electrónicos — <span className="text-primary">¡Gratis!</span>
+                  Recibe nuestra oferta de — <span className="text-primary">Aniversario</span>
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  Digitaliza pagarés, letras de cambio y más. Integrado con tu facturación electrónica.
+                  10 folios gratuitos para que inicies a facturar electrónicamente.        Aplica terminos y condiciones para clientes nuevos.
+                  Recuerda que tenemos facturación para el sector salud; aun no emites facturación con RIPS Y el pos electrónico es una realidad cotiza con nosotros
+
                 </p>
                 <a
                   href="https://wa.me/573013936616?text=Quiero%20activar%20T%C3%ADtulos%20Valor%20gratis"
