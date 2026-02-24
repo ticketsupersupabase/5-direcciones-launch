@@ -64,6 +64,10 @@ const ImplementationSection = () => {
           ))}
         </div>
       </div>
+
+      <div className="flex justify-center mt-8">
+        <p className="text-center text-muted-foreground">La implementación tiene un costo adicional. Consulta tarifas según el tamaño de tu negocio.</p>
+      </div>
     </section>
   );
 };

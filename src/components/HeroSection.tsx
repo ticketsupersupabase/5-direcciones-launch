@@ -36,7 +36,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg opacity-90 mb-8 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-              Facturación electrónica 100% DIAN. Planes desde <strong>$189.900/mes</strong>.
+              Facturación electrónica 100% DIAN. Planes desde <strong>$189.900 inicia facturación con paquetes desde 25 folios </strong>.
             </p>
 
             {/* CTAs */}
@@ -70,6 +70,8 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
+
+     
 
           {/* Imagen lado derecho */}
           <div className="animate-fade-in-up hidden md:block" style={{ animationDelay: "0.2s" }}>
