@@ -1,7 +1,7 @@
 // Sección Implementación - 4 pasos con imagen banner
 // CAMBIAR: Pasos, textos, tiempos estimados
 import { Settings, GraduationCap, ArrowRightLeft, CheckCircle2 } from "lucide-react";
-import imgImplementacion from "@/assets/img-implementacion-2.png";
+import imgImplementacion from "@/assets/img-implementacion.jpg";
 
 const steps = [
   {
