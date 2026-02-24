@@ -16,10 +16,10 @@ const TitulosValorSection = () => {
               />
               <div className="p-8 md:p-10 flex flex-col justify-center text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-4">
-                  Recibe nuestra oferta de — <span className="text-primary">Aniversario</span>
+                  Recibe nuestra oferta de <span className="text-primary">Aniversario</span>
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  10 folios gratuitos para que inicies a facturar electrónicamente.   Aplica terminos y condiciones para clientes nuevos.
+                  10 folios gratuitos para que inicies a facturar electrónicamenta.  Aplica terminos y condiciones para clientes nuevos.
                   Recuerda que tenemos facturación para el sector salud; aun no emites facturación con RIPS Y el pos electrónico es una realidad cotiza con nosotros
 
                 </p>
