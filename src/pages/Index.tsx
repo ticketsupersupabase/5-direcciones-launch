@@ -6,6 +6,7 @@ import ProblemSection from "@/components/ProblemSection";
 import PlansSection from "@/components/PlansSection";
 import ImplementationSection from "@/components/ImplementationSection";
 import AdvantagesSection from "@/components/AdvantagesSection";
+import RIPSSection from "@/components/RIPSSection";
 import TitulosValorSection from "@/components/TitulosValorSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -34,6 +35,9 @@ const Index = () => {
 
       {/* 6. Títulos Valor Gratis - Card especial */}
       <TitulosValorSection />
+
+      {/* 7. RIPS Gratis - Sección destacada con beneficios y CTA */}
+      <RIPSSection />
 
       {/* 7. CTA Final - Formulario + WA */}
       <CTASection />
