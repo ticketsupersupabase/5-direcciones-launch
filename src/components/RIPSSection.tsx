@@ -45,7 +45,7 @@ const RIPSSection = () => {
       Solo emite facturas desde nuestra plataforma y accede al módulo.
     </p>
     <a
-      href="https://wa.me/573013936616?text=¡Hola!%0AQuiero%20activar%20mi%20paquete%20de%20facturación%20electrónica%20con%20RIPS%20GRATIS%20para%20el%20sector%20salud.%0A%0A¿Cuáles%20son%20las%20opciones%20disponibles?%0D%0A%0D%0AThank%20you!"
+      href="https://wa.me/573013936616?text=¡Hola!%0AQuiero%20activar%20mi%20paquete%20de%20facturación%20electrónica%20con%20RIPS%20GRATIS%20para%20el%20sector%20salud.%0A%0A¿Cuáles%20son%20las%20opciones%20disponibles?%0D%0A%0D%0AGracias!"
       target="_blank"
       rel="noopener noreferrer"
     >
