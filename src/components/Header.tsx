@@ -1,5 +1,5 @@
 // Header fijo con logo 5 Direcciones y navegación
-// CAMBIAR: Links de navegación según secciones finales
+// CAMBIAR: Links de navegación según secciones finales, número WA
 import logo from "@/assets/logo-5-direcciones.png";
 
 const Header = () => {
@@ -16,29 +16,34 @@ const Header = () => {
         </a>
 
         {/* Navegación desktop */}
+        {/* CAMBIAR: Links de navegación */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           <a href="#planes" className="text-muted-foreground hover:text-primary transition-colors">
-            Planes
+            Paquetes
           </a>
-          <a href="#ventajas" className="text-muted-foreground hover:text-primary transition-colors">
-            Ventajas
+          <a href="#planes-facturacion" className="text-muted-foreground hover:text-primary transition-colors">
+            Facturación
           </a>
-          <a href="#implementacion" className="text-muted-foreground hover:text-primary transition-colors">
-            Implementación
+          <a href="#planes-doc-soporte" className="text-muted-foreground hover:text-primary transition-colors">
+            Doc. Soporte
           </a>
-          <a href="#contacto" className="text-muted-foreground hover:text-primary transition-colors">
-            Contacto
+          <a href="#planes-nomina" className="text-muted-foreground hover:text-primary transition-colors">
+            Nómina
+          </a>
+          <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">
+            FAQ
           </a>
         </nav>
 
         {/* CTA Header - WhatsApp */}
+        {/* CAMBIAR: Número WA y texto prellenado */}
         <a
-          href="https://wa.me/573013936616?text=Hola%205Direcciones%2C%20quiero%20una%20consulta%20gratis%20sobre%20facturaci%C3%B3n%20electr%C3%B3nica"
+          href="https://wa.me/573013936616?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20paquetes%20de%20folios"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-bold hover-scale-cta"
         >
-          Consulta Gratis
+          Comprar Folios
         </a>
       </div>
     </header>

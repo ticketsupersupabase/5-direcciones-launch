@@ -1,9 +1,10 @@
-// Sección Planes - Cards comparativa con precios y CTAs WhatsApp
+// Sección Planes Destacados - Cards de los 3 paquetes combo principales
 // CAMBIAR: Precios, nombres de planes, features, links WA
 import confetti from "canvas-confetti";
 import { Check } from "lucide-react";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
-// CAMBIAR: Datos de planes aquí
+// CAMBIAR: Datos de planes combo aquí
 const plans = [
   {
     name: "Con Todo",
@@ -18,7 +19,7 @@ const plans = [
     ],
     highlighted: false,
     // CAMBIAR: Texto prellenado WA
-    waText: "Quiero%20plan%20Con%20Todo%20info",
+    waText: "Hola, quiero comprar el paquete Con Todo por $189.900",
   },
   {
     name: "Con Todo Pro",
@@ -32,7 +33,7 @@ const plans = [
       "50 folios para documentos soporte de nómina electrónica",
     ],
     highlighted: true,
-    waText: "Quiero%20plan%20Con%20Todo%20Pro%20info",
+    waText: "Hola, quiero comprar el paquete Con Todo Pro por $309.900",
   },
   {
     name: "Con Todo Max",
@@ -46,7 +47,7 @@ const plans = [
       "300 folios para documentos soporte de nómina electrónica",
     ],
     highlighted: false,
-    waText: "Quiero%20plan%20Con%20Todo%20Max%20info",
+    waText: "Hola, quiero comprar el paquete Con Todo Max por $699.900",
   },
 ];
 
@@ -61,15 +62,15 @@ const PlansSection = () => {
   };
 
   return (
-    <section id="planes" className="py-16 md:py-24">
+    <section id="planes" className="py-16 md:py-24 bg-muted/30">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-extrabold text-foreground mb-4">
-            Elige el plan perfecto para <span className="text-secondary">Tu empresa</span>
+            Paquetes completos para <span className="text-secondary">tu empresa</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             {/* CAMBIAR: Subtítulo planes */}
-            Planes flexibles que se adaptan al tamaño y necesidades de tu negocio.
+            Incluyen folios de facturación, documento soporte y nómina. Vigencia 2 años.
           </p>
         </div>
 
@@ -113,7 +114,7 @@ const PlansSection = () => {
 
               {/* CTA WhatsApp por plan */}
               <a
-                href={`https://wa.me/573013936616?text=${plan.waText}`}
+                href={buildWhatsAppUrl(plan.waText)}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleSelectPlan}
@@ -126,8 +127,6 @@ const PlansSection = () => {
                 Seleccionar {plan.name}
               </a>
             </div>
-
-
           ))}
         </div>
 
